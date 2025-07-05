@@ -1,0 +1,116 @@
+/* Loader should be positioned as an overlay */
+.loader {
+  position: fixed;  /* Keep the loader fixed on the screen */
+  top: 50%;  /* Vertically center the loader */
+  left: 50%;  /* Horizontally center the loader */
+  transform: translate(-50%, -50%);  /* Adjust to ensure true centering */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;  /* Allow clicks to go through to the content */
+  z-index: 1000;  /* Ensure the loader is on top of other content */
+  width: 400px;  /* Increase loader size */
+  height: 400px; /* Increase loader size */
+}
+
+/* Ensure the truck wrapper remains centered */
+.truckWrapper {
+  width: 400px; /* Increased size */
+  height: 400px; /* Increased size */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+  overflow-x: hidden;
+}
+
+/* truck upper body */
+.truckBody {
+  width: 260px;  /* Increased size */
+  height: fit-content;
+  margin-bottom: 12px; /* Adjusted margin */
+  animation: motion 1s linear infinite;
+}
+
+/* truck suspension animation */
+@keyframes motion {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(6px); /* Increased suspension movement */
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* truck's tires */
+.truckTires {
+  width: 260px; /* Increased size */
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px 0px 20px; /* Adjusted padding */
+  position: absolute;
+  bottom: 0;
+}
+
+.truckTires svg {
+  width: 48px; /* Increased tire size */
+}
+
+/* Road */
+.road {
+  width: 100%;
+  height: 3px;  /* Increased road height */
+  background-color: #282828;
+  position: relative;
+  bottom: 0;
+  align-self: flex-end;
+  border-radius: 3px;
+}
+
+.road::before {
+  content: "";
+  position: absolute;
+  width: 40px; /* Increased width of road marks */
+  height: 100%;
+  background-color: #282828;
+  right: -50%;
+  border-radius: 3px;
+  animation: roadAnimation 1.4s linear infinite;
+  border-left: 12px solid white; /* Increased width of road marks */
+}
+
+.road::after {
+  content: "";
+  position: absolute;
+  width: 20px; /* Increased width of road marks */
+  height: 100%;
+  background-color: #282828;
+  right: -65%;
+  border-radius: 3px;
+  animation: roadAnimation 1.4s linear infinite;
+  border-left: 6px solid white; /* Increased width of road marks */
+}
+
+.lampPost {
+  position: absolute;
+  bottom: 0;
+  right: -90%;
+  height: 120px;  /* Increased lamp post height */
+  animation: roadAnimation 1.4s linear infinite;
+}
+
+/* Road animation */
+@keyframes roadAnimation {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-700px); /* Adjusted animation to match larger size */
+  }
+}

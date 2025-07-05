@@ -1,0 +1,196 @@
+.hero {
+    min-height: 80vh;
+    background: linear-gradient(180deg, #C48CB3, #e1ffea22 60%), 
+                url('../Assets/stacked-waves-haikei.png') center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    margin-bottom: 50px;
+    gap: 20px;
+    overflow: hidden; /* Ensures no unwanted overflow */
+}
+
+.hero-left {
+    flex: 1;
+    max-width: 50%;
+    line-height: 1.5;
+    animation: fadeIn 1s ease-in; /* Fade-in animation */
+}
+
+.hero-left h2 {
+    font-size: 28px; /* Professional heading size */
+    font-weight: 600;
+    color: #333; /* Darker color for better readability */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.hero-left h2:hover {
+    color: #2a90ac; /* Subtle color change on hover */
+}
+
+.hero-left p {
+    font-size: 36px; /* Balanced and readable size */
+    font-weight: bold;
+    color: #171717;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Smooth transform transition */
+    line-height: 1.4;
+}
+
+.hero-left p span {
+    color: #2a90ac; /* Accent color for specific words */
+}
+
+.hero-left p:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+.offer-countdown {
+    margin-top: 20px;
+    font-size: 30px;
+    color: #ffffff;
+    font: weight bold;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.timer {
+    font-size: 32px;
+    font-weight: bold;
+    color: #e74c3c;
+    animation: timerAnimation 1s ease-in-out infinite;
+}
+
+.hero-latest-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    background: #2a90ac;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth hover transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.hero-latest-btn:hover {
+    background: #1f7b92; /* Slightly darker shade on hover */
+    transform: translateY(-3px); /* Move up on hover */
+}
+
+.hero-right {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-right img {
+    width: 100%; /* Ensures the image spans the container width */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 600px; /* Optional: Adjusts maximum height */
+    object-fit: contain; /* Ensures the entire image fits without cropping */
+    border-radius: 15px; /* Rounded corners for a polished look */
+    
+    animation: slideIn 1s ease-in; /* Slide-in animation */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .hero {
+        flex-direction: column;
+        padding: 15px 6%;
+    }
+
+    .hero-left, .hero-right {
+        max-width: 100%;
+    }
+
+    .hero-left h2 {
+        font-size: 24px;
+    }
+
+    .hero-left p {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero {
+        min-height: 95vh;
+    }
+
+    .hero-left h2 {
+        font-size: 20px;
+    }
+
+    .hero-left p {
+        font-size: 28px;
+    }
+
+    .hero-right img {
+        max-height: 300px; /* Smaller image for narrower screens */
+    }
+}
+
+@media (max-width: 700px) {
+    .hero {
+        padding: 10px 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-left {
+        text-align: center; /* Center-align text for smaller screens */
+    }
+
+    .hero-right {
+        display: none; /* Hide images on very small screens */
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes timerAnimation {
+    0% {
+        color: #e74c3c;
+    }
+    50% {
+        color: #f39c12;
+    }
+    100% {
+        color: #e74c3c;
+    }
+}
