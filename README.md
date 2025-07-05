@@ -130,7 +130,6 @@ npm start
 │   └── App.js, Index.js
 
 
-![image](https://github.com/user-attachments/assets/d4225fda-9b61-47a1-9d0c-fa5f7e052d77)
 
 
 Developer: Priatm Ghosh]
