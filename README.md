@@ -1,0 +1,2 @@
+# Stylify-ecommerce
+FASHION THAT FITS EVERY AGE, EVERY OCCASION!
