@@ -130,15 +130,8 @@ npm start
 │   └── App.js, Index.js
 
 
-![firstpage](https://github.com/user-attachments/assets/736addad-be09-4fa0-8897-8f2af4aae833)
-![Opera Snapshot_2024-12-12_214230_localhost](https://github.com/user-attachments/assets/9dac92d5-adda-4b2c-bdc8-e91a9312b9de)
-![Opera Snapshot_2024-12-12_214323_localhost](https://github.com/user-attachments/assets/e07e513b-d2f8-4d7f-9b37-0e63b0b3f5a1)
-![Opera Snapshot_2024-12-12_214424_localhost](https://github.com/user-attachments/assets/64b71521-53d2-4b5a-a8c8-d620454a43c6)
-![Opera Snapshot_2024-12-12_214712_localhost](https://github.com/user-attachments/assets/536bdecc-d60c-4ced-8e56-836e87944945)
-![Opera Snapshot_2024-12-12_214615_localhost](https://github.com/user-attachments/assets/b88113f2-1a62-4091-a1ae-2a126f202dda)
-![Opera Snapshot_2024-12-12_214539_localhost](https://github.com/user-attachments/assets/86bcd999-daed-48df-88b3-ddc61c57e878)
-![Opera Snapshot_2024-12-12_214524_localhost](https://github.com/user-attachments/assets/8c5c7ca7-8a3b-46b8-8ade-d13cb3c6af27)
-For questions, feedback, or collaboration:
+![image](https://github.com/user-attachments/assets/d4225fda-9b61-47a1-9d0c-fa5f7e052d77)
+
 
 Developer: Priatm Ghosh]
 Email: gpritam827@gmail.com
